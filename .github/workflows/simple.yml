@@ -9,7 +9,7 @@ jobs:
       - name: echo a string
         run: |
              echo "Hello World"
-             echo "secrets.TESTING_KEY"
+             echo  ${{ secrets.TESTING_KEY }}
         
       - name: run node version & npm version
         run: |
