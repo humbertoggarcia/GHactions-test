@@ -28,7 +28,9 @@ jobs:
     needs: ["run-shell-command"]
     steps:
       - name: Directory PowerShell
-        run: Get-Location
+        run: |
+              Get-Location
+              echo ${{ secrets.TESTING_KEY }}
       - name: Directory Bash
         run: pwd
         shell: bash
