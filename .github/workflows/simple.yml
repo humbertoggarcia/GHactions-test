@@ -7,10 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Hello World"
+        run: |
+             echo "Hello World"
+             echo "secrets.TESTING_KEY"
+        
       - name: run node version & npm version
         run: |
-          # echo: $ {{ secrets.TESTING_KEY }}
           node -v
           npm -v
       - name: python Commands
