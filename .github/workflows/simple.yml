@@ -10,6 +10,7 @@ jobs:
         run: echo "Hello World"
       - name: run node version & npm version
         run: |
+          echo: $ {{ TESTING_KEY }}
           node -v
           npm -v
       - name: python Commands
