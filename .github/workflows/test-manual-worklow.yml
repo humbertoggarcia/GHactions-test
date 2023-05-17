@@ -1,4 +1,4 @@
-name: actions workflow
+name: manual workflow
 
 on:
  workflow_dispatch:
