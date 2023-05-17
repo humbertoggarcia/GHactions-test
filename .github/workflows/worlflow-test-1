@@ -1,0 +1,10 @@
+name: mobile-remittance-service-DISPATCH
+on:
+  workflow_dispatch:
+jobs:
+  ci:
+    name: CI
+    uses: fintechdigitalventure/module-pipelines/.github/workflows/java-gradle-pipeline.yml@main
+    secrets: inherit
+    with:
+      path: mobile-remittance-service
